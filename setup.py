@@ -97,7 +97,7 @@ setup(
     packages=find_packages(),
     install_requires=["numpy"],
     python_requires=">=3.6",
-    description="Processing-in-memory stack-based CUDA Nock interpreter using PyPIM",
+    description="Emulated processing-in-memory stack-based CUDA Nock interpreter using PyPIM",
     author="~sitful-hatred",
     author_email="reid@nativeplanet.io",
     cmdclass={

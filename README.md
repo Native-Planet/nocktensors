@@ -1,6 +1,6 @@
-## PIMNock
+## nocktensors
 
-### Processing-in-memory stack-based Nock interpreter using tensor operations
+### emulated processing-in-memory stack-based Nock interpreter using tensor operations
 
 ##### Requirements:
 
