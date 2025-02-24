@@ -1,0 +1,3 @@
+[submodule "PyPIM"]
+	path = PyPIM
+	url = https://github.com/oleitersdorf/PyPIM
