@@ -2,6 +2,8 @@
 
 ### emulated processing-in-memory stack-based Nock interpreter using tensor operations
 
+see [this paper](https://arxiv.org/html/2308.14007v2) for an explanation of the pypim framework; tldr we use it to emulate a memristor isa with cuda to work with nouns as tensors built with bitwise operations. this is just for fun
+
 ##### Requirements:
 
 - nvcc
