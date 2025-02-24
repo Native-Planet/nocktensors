@@ -1,0 +1,5 @@
+pypim
+*/__pycache__
+build
+.env
+*egg-info
