@@ -7,7 +7,6 @@ def nock(subject, formula):
     """
     subject_idx = create_noun(subject)
     formula_idx = create_noun(formula)
-    print(f"DEBUG2: Formula noun structure (Python list form): {noun_to_python(formula_idx)}") # DEBUG PRINT
     result_idx = nock_interpreter(subject_idx, formula_idx)
     return noun_to_python(result_idx)
 

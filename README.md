@@ -16,3 +16,5 @@ see [this paper](https://arxiv.org/html/2308.14007v2) for an explanation of the 
 - `git clone https://github.com/Native-Planet/nocktensors`
 - `cd nocktensors && git submodule update --remote PyPIM`
 - `sudo python3 setup.py install`
+- `python3 -m unittest discover tests`
+- `python3 examples/demo.py`
