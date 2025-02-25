@@ -94,7 +94,6 @@ def benchmark_op9_invoke_slot1_subject_0_1():
     return nock(subject, formula)
 
 def run_benchmark_timed(benchmark_func, num_runs=10):
-    """Run a benchmark function multiple times and measure average time."""
     times = timeit.repeat(benchmark_func, repeat=num_runs, number=1) # number=1 means run once per repeat
     average_time = min(times) / 1.0
     return average_time
@@ -114,7 +113,7 @@ def demo_all():
         benchmark_op9_invoke_slot1_subject_0_1,
     ]
 
-    print("Benchmarking Nock Interpreter:")
+    print("Benchmarking:")
     for benchmark_func in benchmarks:
         benchmark_name = benchmark_func.__name__
         average_time_seconds = run_benchmark_timed(benchmark_func)
