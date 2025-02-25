@@ -9,11 +9,10 @@ def create_noun(noun):
         tail_idx = create_noun(noun[1])
         return allocate_cell(head_idx, tail_idx)
     elif isinstance(noun, list) and len(noun) > 2:
-        # Convert [a, b, c, ...] to [a, [b, [c, ...]]]
-        result = create_noun(noun[-1])
-        for item in reversed(noun[1:-1]):
-            result = allocate_cell(create_noun(item), result)
-        return allocate_cell(create_noun(noun[0]), result)
+        result = create_noun(noun[-1])  # Start with the last element
+        for item in reversed(noun[:-1]): # Iterate in reverse, excluding last element
+            result = allocate_cell(create_noun(item), result) # Cell(current_item, previous_result)
+        return result
     else:
         raise ValueError(f"Invalid noun structure: {noun}")
 
