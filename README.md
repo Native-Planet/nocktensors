@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/dd851d45-608f-4be1-bf95-36177088a0b1)
+
 ## nocktensors
 
 ### emulated processing-in-memory stack-based Nock interpreter using tensor operations
